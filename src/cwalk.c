@@ -11,10 +11,11 @@
  */
 #if defined(WIN32) || defined(_WIN32) ||                                       \
   defined(__WIN32) && !defined(__CYGWIN__)
-static enum cwk_path_style path_style = CWK_STYLE_WINDOWS;
-#else
-static enum cwk_path_style path_style = CWK_STYLE_UNIX;
+#error Report this error to Vincent Dalstra, then delete this line (I want to know if this even happens)
 #endif
+
+
+static enum cwk_path_style path_style = CWK_STYLE_UNIX;
 
 /**
  * This is a list of separators used in different styles. Windows can read
