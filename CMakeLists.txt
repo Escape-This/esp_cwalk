@@ -20,7 +20,7 @@ idf_component_register(
 
 # Append compiler options, for this component only!
 
-target_compile_options(${COMPONENT_LIB} PRIVATE -Werror)
+target_compile_options(${COMPONENT_LIB} PRIVATE -Werror)	# Doesn't work?
 target_compile_options(${COMPONENT_LIB} PRIVATE -fanalyzer)
 
 
